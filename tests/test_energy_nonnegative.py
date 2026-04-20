@@ -1,11 +1,26 @@
 import numpy as np
-from src.kernel.compute_kernel import energy
+from src.kernel.akcl_syn_certificate import (
+    AKCLConfig,
+    center_columns,
+    compress_to_basis,
+    feature_matrix,
+    gram_energy,
+    make_log_grid,
+    min_eig,
+    neutral_mode,
+    packet_columns,
+    real_orthonormalize,
+)
 
 
-def test_energy_is_nonnegative_on_sample_family():
-    xs = np.linspace(0.5, 3.0, 8)
-    t_values = [0.0, 1.0, 2.0]
-    f = np.array([x - np.mean(xs) for x in xs], dtype=float)
-    E = energy(f, xs, t_values)
-    assert np.isfinite(E)
-    assert E >= -1e-10
+def test_declared_packet_energy_matrix_is_psd():
+    cfg = AKCLConfig()
+    x, q, u = make_log_grid(cfg.u_min, cfg.u_max, cfg.n_grid)
+    neutral = neutral_mode(x, q, cfg.alpha)
+    centers = np.linspace(cfg.center_min, cfg.center_max, cfg.packet_count)
+    B = real_orthonormalize(packet_columns(u, centers, cfg.packet_sigma), neutral)
+    t_values = np.linspace(0.0, cfg.t_max, cfg.t_count)
+    Phi = center_columns(feature_matrix(x, q, t_values, cfg.alpha), neutral)
+    E = compress_to_basis(gram_energy(Phi), B)
+    assert np.allclose(E, E.T, atol=1e-10)
+    assert min_eig(E) >= -1e-10
