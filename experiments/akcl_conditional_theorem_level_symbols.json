@@ -1,0 +1,17 @@
+{
+  "model": "conditional_finite_theorem_level_symbols",
+  "basis_dimension": 5,
+  "H_AKCL": "R^m",
+  "norm_H_AKCL": "euclidean",
+  "J_m": "identity",
+  "E_AKCL": "left-multiplication by E_matrix",
+  "D_AKCL": "left-multiplication by D_matrix",
+  "P_AKCL_img": "H_AKCL",
+  "closure_equals_H_AKCL": true,
+  "c0_tilde": 0.03902615940272554,
+  "eta_tilde": 0.566008637530572,
+  "identified_from_declared_pair": {
+    "c0": 0.03902615940272554,
+    "eta": 0.566008637530572
+  }
+}
