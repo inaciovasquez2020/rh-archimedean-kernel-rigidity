@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rh-archimedean-kernel-rigidity"
+version = "0.1.0"
+description = "Executable artifact surface for the AKCL repository."
+readme = "README.md"
+requires-python = ">=3.9"
+authors = [{name = "Inacio F. Vasquez"}]
+dependencies = []
+
+[tool.setuptools]
+packages = []
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+addopts = "-q"
