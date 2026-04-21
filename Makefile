@@ -16,3 +16,7 @@ surface:
 
 repo-check:
 	sh scripts/run_repo_check.sh
+
+.PHONY: akcl-truth
+akcl-truth:
+	./scripts/run_akcl_truth_suite.sh
