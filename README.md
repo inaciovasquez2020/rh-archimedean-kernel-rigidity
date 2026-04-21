@@ -19,3 +19,11 @@ with defect control:
 Def(f) ≤ η E[f], η < 1
 
 ⇒ rigidity closure ⇒ RH.
+
+## AKCL truth suite
+
+Run the canonical AKCL truth lock locally with:
+
+```bash
+make akcl-truth
+```
