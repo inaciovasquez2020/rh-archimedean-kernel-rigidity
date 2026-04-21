@@ -10,4 +10,5 @@ python3 -m pytest -q \
   tests/test_akcl_global_rigidity_upgrade_registry_literal.py \
   tests/test_akcl_global_rigidity_upgrade_truth_sync.py \
   tests/test_akcl_completion_snapshot_literal.py \
-  tests/test_akcl_completion_truth_sync.py
+  tests/test_akcl_completion_truth_sync.py \
+  tests/test_akcl_index_literal.py
