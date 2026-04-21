@@ -27,3 +27,15 @@ Run the canonical AKCL truth lock locally with:
 ```bash
 make akcl-truth
 ```
+
+## AKCL index
+
+Canonical AKCL status/index entrypoint:
+
+- `docs/rigidity/rh/INDEX.md`
+
+Run the locked truth suite with:
+
+```bash
+make akcl-truth
+```
