@@ -1,0 +1,16 @@
+{
+  "model": "conditional_exact_finite_declared_pair",
+  "basis_dimension": 5,
+  "admissible_class": "R^m",
+  "norm": "euclidean",
+  "energy_definition": "a^T E a",
+  "defect_definition": "a^T D a",
+  "c0_star": 0.03902615940272554,
+  "eta_star": 0.566008637530572,
+  "identified_from_declared_pair": {
+    "c0": 0.03902615940272554,
+    "eta": 0.566008637530572
+  },
+  "coercive": true,
+  "defect_dominated": true
+}
