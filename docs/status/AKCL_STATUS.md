@@ -3,6 +3,9 @@
 ## Status
 OPEN
 
+## Canonical blocker registry
+See `docs/rigidity/rh/INDEX.md`.
+
 ## Canonical entrypoint
 - `docs/rigidity/rh/INDEX.md`
 
