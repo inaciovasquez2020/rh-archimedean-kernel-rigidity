@@ -2,6 +2,10 @@
 
 Archimedean Kernel Coercivity Lemma (AKCL) framework for a rigidity-based reduction of the Riemann Hypothesis.
 
+## AKCL index
+
+- `docs/rigidity/rh/INDEX.md`
+
 ## Start Here
 
 - `QUICKSTART.md`
