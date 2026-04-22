@@ -18,6 +18,10 @@ Archimedean Kernel Coercivity Lemma (AKCL) framework for a rigidity-based reduct
 - a status-locked repository for the Archimedean coercivity line;
 - a verification-first repository with a canonical truth suite.
 
+## Conditional note
+
+This repository is conditional. The Archimedean kernel coercivity program remains conditional on the remaining coercivity-plus-defect control certificate.
+
 ## Current status
 
 - repository scope: active executable artifact and status surface;
