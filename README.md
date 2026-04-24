@@ -50,3 +50,11 @@ make akcl-truth
 - explicitly justified semantic changes only.
 
 See `CONTRIBUTING.md`.
+
+## AKCL truth suite
+
+Run the repository truth suite with:
+
+```bash
+make akcl-truth
+This is the canonical local verification entry point for the AKCL status surface.
